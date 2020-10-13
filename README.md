@@ -1,6 +1,6 @@
 # jwtpubsigner
 This little script signs JWT token (header+payload) using server public key and HMAC 256/512 alg. Useful for RS -> HS JWT attacks.
-A little note: header and payload must be already base64url-encoded.
+A little note: header and payload must be already base64url-encoded and padding (=) removed.
 
 **Usage: ./jwtpubsigner.sh [example.com] [header.payload]**
 
